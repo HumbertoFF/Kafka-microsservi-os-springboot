@@ -1,0 +1,28 @@
+spring:
+  aplication:
+    name: clientes
+  datasource:
+    url: jdbc:postgresql://aws-1-us-east-2.pooler.supabase.com:5432/postgres
+    username: postgres.kqxuavtcxaibunvqioux
+    password: '!@#$Hl1703!@#$'
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 5
+      connection-timeout: 30000
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8082
+
+
+#  datasource:
+#    url: jdbc:postgresql://localhost:5555/icomprasclientes
+#    username: postgres
+#    password: postgres
+#    driver-class-name: org.postgresql.Driver
